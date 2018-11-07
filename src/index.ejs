@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>my-music-app</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_706875_rcb7kfwt1xg.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- Set `__static` path to static files in production -->
+    <script>
+        if (process.env.NODE_ENV !== 'development') window.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\')
+    </script>
+
+    <!-- webpack builds are automatically injected -->
+</body>
+
+</html>
